@@ -1,13 +1,13 @@
-function NavBar(){
-    return(
-        <nav className="navbar">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    )
+function NavBar({ setPage }) {
+  return (
+    <nav className="navbar">
+      <ul>
+        <li onClick={() => setPage("home")}>Home</li>
+        <li onClick={() => setPage("about")}>About</li>
+        <li onClick={() => setPage("contact")}>Contact</li>
+      </ul>
+    </nav>
+  )
 }
 
 export default NavBar
